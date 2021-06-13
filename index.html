@@ -85,7 +85,9 @@
 			});
 		}
 
-
+window.onload = function() {
+    document.getElementById("audio-bg").play();
+}
 	</script>
 	<script type="text/javascript"
 		src="./bitrix/cache/js/s2/dweb/kernel_main/kernel_main8d30.js?1584878687334581"></script>
@@ -154,6 +156,14 @@
 			margin-top: -100px;
 		}
 
+		#facebook {
+			background-image: url('./img/facebook.png')
+		}
+
+		#youtube {
+			background-image: url('./img/youtube.png')
+		}
+
 		@media only screen and (max-width: 600px) {
 			.social-container {
 				position: relative;
@@ -169,7 +179,7 @@
 				flex-direction: row;
 				align-items: center;
 				background-color: transparent;
-				width: 9rem;
+				width: 12rem;
 				border-top-left-radius: 10px;
 			}
 
@@ -242,12 +252,16 @@
 </head>
 
 <body id="index-page" class="mainpage" style="background-color: black;">
+	<audio id="audio-bg" src="./video/a.mp3">
+	
+	</audio>
 	<div class="page-container">
 		<div class="video-bg" style="margin: 0px;padding: 0px;">
-			<video loop="loop" autoplay="autoplay" preload="yes" playsinline>
+			
+			<video loop="loop" autoplay="autoplay"  playsinline muted>
 
 
-				<source src="./video/bg.mp4" type='video/mp4'>
+				<source src="https://ghdtoken.net/background.mp4" type='video/mp4'>
 				Sorry, the video tag is not supported by your browser.
 			</video>
 		</div>
@@ -288,6 +302,14 @@
 									smooth-border-tr"></i><i class="smooth-border-bl"></i>Khabib NFT</a>
 								<a href="index.html" class="page-change smooth-border "><i class="
 									smooth-border-tr"></i><i class="smooth-border-bl"></i>Download GHD App</a>
+								<a href="index.html" class="page-change smooth-border "><i class="
+									smooth-border-tr"></i><i class="smooth-border-bl"></i>About GHD</a>
+								<a href="index.html" class="page-change smooth-border "><i class="
+									smooth-border-tr"></i><i class="smooth-border-bl"></i>How to buy</a>
+								<a href="index.html" class="page-change smooth-border "><i class="
+									smooth-border-tr"></i><i class="smooth-border-bl"></i>GHD TEAM</a>
+								<a href="index.html" class="page-change smooth-border "><i class="
+									smooth-border-tr"></i><i class="smooth-border-bl"></i>Statics</a>
 							</div>
 						</div>
 					</div>
@@ -385,8 +407,54 @@
 							</a>
 						</div>
 					</div>
-
-
+					<div class="elem-wrap">
+						<div class="container">
+							<a class="elem page-change" href="#">
+								<div class="bg"
+									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.46.59.jpeg') center 4px / cover no-repeat">
+								</div>
+								<div class="smooth-border"><i class="smooth-border-tr"></i><i
+										class="smooth-border-bl"></i></div>
+								<span class="bordered">About GHD</span>
+							</a>
+						</div>
+					</div>
+					<div class="elem-wrap">
+						<div class="container">
+							<a class="elem page-change" href="#">
+								<div class="bg"
+									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.47.45.jpeg') center -36px / cover no-repeat">
+								</div>
+								<div class="smooth-border"><i class="smooth-border-tr"></i><i
+										class="smooth-border-bl"></i></div>
+								<span class="bordered">How to buy</span>
+							</a>
+						</div>
+					</div>
+					<div class="elem-wrap">
+						<div class="container">
+							<a class="elem page-change" href="#">
+								<div class="bg"
+									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.48.41.jpeg') center -80px / cover no-repeat">
+								</div>
+								<div class="smooth-border"><i class="smooth-border-tr"></i><i
+										class="smooth-border-bl"></i></div>
+								<span class="bordered">GHD TEAM</span>
+							</a>
+						</div>
+					</div>
+					<div class="elem-wrap">
+						<div class="container">
+							<a class="elem page-change" href="#">
+								<div class="bg"
+									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.52.26.jpeg') center -30px / cover no-repeat">
+								</div>
+								<div class="smooth-border"><i class="smooth-border-tr"></i><i
+										class="smooth-border-bl"></i></div>
+								<span class="bordered">Statics</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -416,7 +484,7 @@
 													structure but will contribute to overlooked charities and exert
 													towards a greater cause.
 												</div>
-												
+
 												<div class="win-count" style="margin-top:20px">
 													<div style="display:flex;flex-direction:row;width: 100%;">
 
@@ -479,6 +547,12 @@
 													</a>
 													<a href="">
 														<div class="social-item" id="app"></div>
+													</a>
+													<a href="">
+														<div class="social-item" id="facebook"></div>
+													</a>
+													<a href="">
+														<div class="social-item" id="youtube"></div>
 													</a>
 
 												</div>
