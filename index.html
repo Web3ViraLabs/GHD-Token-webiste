@@ -8,7 +8,8 @@
 
 <head>
 	<meta charset="windows-1252">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Description" />
 	<meta name="keywords" content="Keywords" />
@@ -125,11 +126,15 @@
 		.social-item {
 			margin-top: 5px;
 
-			height: 1.4rem;
+			height: 1.8rem;
 			margin-bottom: 5px;
 			background-size: cover;
 			background-position: center;
-			width: 1.4rem
+			width: 1.8rem
+		}
+
+		.lang a {
+			font-size: medium;
 		}
 
 		#instagram {
@@ -168,7 +173,7 @@
 		@media only screen and (max-width: 600px) {
 			.social-container {
 				position: relative;
-				margin-top: 20px;
+				margin-top: 40px;
 				margin-left: 20px;
 				right: 11px;
 				height: auto;
@@ -180,14 +185,14 @@
 				flex-direction: row;
 				align-items: center;
 				background-color: transparent;
-				width: 12rem;
+				width: 18rem;
 				border-top-left-radius: 10px;
 			}
 
 			#page-logo {
 
-				height: 40px !important;
-				width: 40px !important;
+				height: 60px !important;
+				width: 60px !important;
 			}
 
 			.logo-text {
@@ -266,7 +271,8 @@
 				Sorry, the video tag is not supported by your browser.
 			</video>
 		</div>
-		<header style="position: relative;background-color: transparent !important;height: 15vh;width:100vw">
+		<header
+			style="position: relative;background-color: transparent !important;height: 15vh;width:100vw;padding:0px !important">
 			<div class="page-width" style="padding-bottom: 13px;">
 				<div class="table">
 					<div class="tc">
@@ -278,7 +284,7 @@
 								<div class="logo">
 									<span> <img id="page-logo" alt="logo" src="./img/logo.png"
 											style="height:70px;width:70px;border-radius: 70px;">
-										<div class="logo-text">official website</div>
+
 									</span>
 								</div>
 							</a>
@@ -475,9 +481,12 @@
 
 												<div class="slide-title">
 													<div class="logo-khabib"></div>
-													<span class="first-span">GHD TOKEN</span>
+													<span class="first-span"></span>
 												</div>
-												<div class="slide-text" id="textcontent">GHD token bridges the world of
+
+												<div class="slide-text" id="textcontent" style="font-size:large">
+													<p style="font-size:xx-large;font-weight:bold;color:white">GHD</p>
+													token bridges the world of
 													major sporting league events to the groundbreaking technology of
 													cryptocurrency. Joint
 													hands with the Legends of the sporting and entertainment industry,
@@ -548,7 +557,7 @@
 													<a href="https://twitter.com/ghd_token">
 														<div class="social-item" id="twitter"></div>
 													</a>
-													<a href="">
+													<a href="https://discord.gg/SfmsRG63FF">
 														<div class="social-item" id="app"></div>
 													</a>
 													<a href="">

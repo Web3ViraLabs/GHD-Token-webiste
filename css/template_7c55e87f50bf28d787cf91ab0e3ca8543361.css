@@ -1916,7 +1916,7 @@ header .audio-btn.stop:after { opacity: 1; }
 header .logo { display: inline-block; vertical-align: top; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 header .logo-text { display: block; margin-top: 0.5em; font-size: 11px; font-weight: 500; text-transform: uppercase; line-height: 1em; color: #fff; }
 header .lang { display: inline-block; vertical-align: middle; -webkit-transition: all 0.3s 0.2s ease-in-out; -o-transition: all 0.3s 0.2s ease-in-out; transition: all 0.3s 0.2s ease-in-out; }
-header .lang a { display: inline-block; width: auto; margin-left: 3px; padding: 10px 10px 8px; line-height: 1.1em; text-align: center; vertical-align: middle; font-size: 11px; text-transform: uppercase; font-weight: 400; color: #fff; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+header .lang a { display: inline-block; width: auto; margin-left: 3px; padding: 10px 10px 8px; line-height: 1.1em; text-align: center; vertical-align: middle; font-size: 20px; text-transform: uppercase; font-weight: 400; color: #fff; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-family: 'Staatliches', cursive;}
 header .lang a.active-smooth { background: rgba(22, 4, 3, 0.1); }
 header .lang a:hover { background: rgba(22, 4, 3, 0.1); }
 header.static-header { top: 0; padding-top: 10px; background: rgba(0,0,0, 0.9); box-shadow: 0 0 15px 10px rgba(0,0,0, 0.9); }
