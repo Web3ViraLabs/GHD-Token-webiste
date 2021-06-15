@@ -81,7 +81,42 @@ body{
   -ms-flex-align: center;
   align-items: center;
 }
-
+.footer{
+  width: 100%;
+  margin-top: 1rem;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around
+}
+.stats-box{
+  width:16rem;
+  height:5rem;
+  padding: 2%;
+margin:2%;
+  display: flex;
+  border-radius: 5px;
+  background-color:transparent;
+  border:#00cde4 solid 2px;
+  flex-direction:row;
+  align-items:center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  justify-content:flex-start
+}
+.stats-box:hover{
+  background-color: #00cde4;
+}
+.stas-col p{
+  margin:0px;padding:0px;
+  font-weight: bold;
+ 
+  font-family: 'Varela Round', sans-serif;
+}
+.stas-col{
+  display: flex;
+  margin-left: 15px;
+  flex-direction:column;
+}
 .road__item-active .road__item-metka:after {
   content: "";
   display: block;
@@ -492,6 +527,14 @@ p{
   font-size: small;
   color: #fff;
   font-weight: 700;
+}
+.footer{
+  width: 100%;
+  margin-top: 1rem;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around
 }
 #page-logo {
     margin-top:0px;

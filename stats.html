@@ -7,7 +7,8 @@
 
 <head>
     <meta charset="windows-1252">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Description" />
     <meta name="keywords" content="Keywords" />
@@ -99,10 +100,10 @@
         type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js', './bitrix/js/main/core/core_ajax.js', './bitrix/js/main/core/core_popup.js', './bitrix/js/main/core/core_date.js', './bitrix/js/main/json/json2.min.js', './bitrix/js/main/core/core_ls.js', './bitrix/js/main/core/core_fx.js', './bitrix/js/main/session.js', '../local/templates/dweb/js/jquery-1.12.4.min.js', '../local/templates/dweb/js/slider/slick.js', '../local/templates/dweb/js/fancybox/jquery.fancybox.js', '../local/templates/dweb/js/scrollbar/scrollbar.min.js', '/local/templates/dweb/js/script.js']);</script>
     <script
         type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css', './bitrix/js/main/core/css/core_popup.css', './bitrix/js/main/core/css/core_date.css', '../local/templates/dweb/fonts/brutaltype.css', '../local/templates/dweb/fonts/roboto.css', '../local/templates/dweb/js/slider/slick.css', '../local/templates/dweb/js/fancybox/jquery.fancybox.min.css', '../local/templates/dweb/js/scrollbar/scrollbar.css', '../local/templates/dweb/css/keyframes.css', '/local/templates/dweb/template_styles.css']);</script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
-
     <script type="text/javascript"
         src="./bitrix/cache/js/s2/dweb/template_7ef16f6daeec480e0f6e1daae017d0b3/template_7ef16f6daeec480e0f6e1daae017d0b31414.js?1557128267370834"></script>
     <script
@@ -112,13 +113,13 @@
             display: none
         }
 
-        #allo-body {
-            margin-top: 7rem;
-        }
-
         header .lang a {
             font-family: 'Staatliches';
             font-size: 20px;
+        }
+
+        #allo-body {
+            margin-top: 7rem;
         }
 
         .social-container {
@@ -128,6 +129,7 @@
             z-index: 10000;
             bottom: 0px;
             display: flex;
+            padding-top: 2rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -146,6 +148,12 @@
             width: 1.8rem
         }
 
+        .chart__text,
+        .chart__title {
+            font-family: 'Staatliches';
+            font-size: 23px;
+        }
+
         #instagram {
             background-image: url('./img/instagram.png')
         }
@@ -162,51 +170,32 @@
             background-image: url('./img/du.jpg')
         }
 
-        #roadparent {
-            margin-top: 7rem;
+        .slide-text {
+            font-family: 'Bebas Neue';
+        }
+
+        #app {
+            background-image: url('./img/du.jpg')
+        }
+
+        .slide-title {
+            font-family: 'Bebas Neue';
+            margin-top: -100px;
+        }
+
+        #facebook {
+            background-image: url('./img/facebook.png')
+        }
+
+        #youtube {
+            background-image: url('./img/youtube.png')
         }
 
         .slide-title {
             margin-top: -100px;
         }
 
-        #roadmap {
-            height: 60vh;
-            overflow-y: scroll;
-            overflow-x: visible;
-            padding-right: 20rem;
-            padding-top: 1rem;
-            padding-left: 1rem;
-            width: 100%;
-        }
-
-        .road__item-title,
-        p {
-            font-family: 'Bebas Neue';
-        }
-.road__item-content div {
-    font-size:20px
-}
-.road__item-content p{
-    font-size: 20px
-}
         @media only screen and (max-width: 600px) {
-            .row {
-                margin-top: 0rem;
-            }
-
-            #roadparent {
-                margin-top: 0rem;
-            }
-
-            #roadmap {
-                height: 60vh;
-                width: auto;
-                padding-left: 10px;
-                padding-right: 0px;
-                padding-top: 5px;
-            }
-
             .social-container {
                 position: relative;
                 margin-top: 40px;
@@ -223,11 +212,6 @@
                 background-color: transparent;
                 width: 18rem;
                 border-top-left-radius: 10px;
-            }
-
-            .road__item-title,
-            p {
-                font-family: 'Bebas Neue';
             }
 
             #page-logo {
@@ -255,27 +239,6 @@
             .slide-title {
                 margin-top: 0px;
             }
-        }
-
-        .slide-text {
-            font-family: 'Bebas Neue';
-        }
-
-        #app {
-            background-image: url('./img/du.jpg')
-        }
-
-        .slide-title {
-            font-family: 'Bebas Neue';
-            margin-top: -100px;
-        }
-
-        #facebook {
-            background-image: url('./img/facebook.png')
-        }
-
-        #youtube {
-            background-image: url('./img/youtube.png')
         }
 
         /* 	.progress {
@@ -544,120 +507,47 @@
                                     <div class="slide-wrap">
                                         <div class="table">
                                             <div class="left" id="left">
-                                                <section class="section map" id="map">
-                                                    <div class="container">
-
-                                                        <div class="row" id="roadparent">
-                                                            <div class="col-lg-12 offset-lg-4 col-sm-8 offset-sm-4">
-                                                                <div class="road" id="roadmap">
-                                                                    <div class="road__item road__item-active">
-                                                                        <div class="road__item-metka"></div>
-                                                                        <div class="road__item-content">
-                                                                            <div class="road__item-title">Q1- June 12th
-                                                                                2021 - July 18th 2021</div>
-                                                                            <p>
-                                                                                1-Website and branding<br>
-                                                                                2-Release Whitepaper<br>
-                                                                                3-Release Audit<br>
-                                                                                4-Presale LaunchAnd public launch<br>
-                                                                                5-Apply for BSCscan logo & social
-                                                                                profiles<br>
-                                                                                6-Listing on Coingecko 24th June/1st
-                                                                                July<br>
-                                                                                7-Listing on CoinMarketCap 26th June/1st
-                                                                                July<br>
-                                                                                8- Charity
-                                                                                https://childgrowthfoundation.org/
-                                                                                Donation 21st June<br>
-                                                                                9- Hasbulla Post on all his Socials <br>
-                                                                                10- Khabib Post on all his Socials<br>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="road__item">
-                                                                        <div class="road__item-metka"></div>
-                                                                        <div class="road__item-content">
-                                                                            <div class="road__item-title">Q2- July 18TH
-                                                                                October 6TH 2021</div>
-                                                                            <p>
-                                                                                1- Amanda Cerny - Mia Khalifa and other
-                                                                                influencers promotion 19th july 2021<br>
-                                                                                2- Keeping up with the social media
-                                                                                marketing: Reddit, Tiktok, Instagram and
-                                                                                twitter<br>
-                                                                                3- Release of GHD APP to Buy sport
-                                                                                tickets using Cryptocurrency 28th July
-                                                                                2021<br>
-                                                                                4- Market the GHD APP on Multiple Sport
-                                                                                channels and sport influencers 1st of
-                                                                                August<br>
-                                                                                5- Approach 433 Instagram page for a
-                                                                                collaboration and marketing 3rd of
-                                                                                August <br>
-                                                                                6- 2021/2022 Football league starts ,
-                                                                                People can buy Tickets using GHD APP -
-                                                                                13% Of the profits goes to GHD Liquidity
-                                                                                pool token.<br>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="road__item">
-                                                                        <div class="road__item-metka"></div>
-                                                                        <div class="road__item-content">
-                                                                            <div class="road__item-title">Q3- October
-                                                                                6th 2021 - February 2nd 2022 </div>
-                                                                            <p>
-                                                                                1- Re-post by Khabib on mention how
-                                                                                successful is the token and how it went
-                                                                                through - October 6th 2021<br>
-                                                                                2- Approach Football stars such as ,
-                                                                                Patrice Evra - Rio Ferdinand - Micheal
-                                                                                Salgado, Didier Drogba to promote us
-                                                                                12th of November 2021<br>
-                                                                                3- Approach UFC Stars such as Jon Jones,
-                                                                                George St-Pierre 2nd of December
-                                                                                2021<br>
-                                                                                4- Announce partnership to be able to
-                                                                                buy FIFA WORLD CUP Tickets using GHD APP
-                                                                                3rd of January 2022<br>
-                                                                                5-Approach Binance, Huobi and Crypto.com
-                                                                                for Listing February 2nd 2022<br>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="road__item">
-                                                                        <div class="road__item-metka"></div>
-                                                                        <div class="road__item-content">
-                                                                            <div class="road__item-title">Q4- February
-                                                                                2nd 2022 - December 18th 2022</div>
-                                                                            <p>
-                                                                                1- NFT Farming February 2nd 2022 <br>
-                                                                                2- GHDGaming APP Launch 6th of March
-                                                                                2022<br>
-                                                                                3- GHDLottery 7th of April 2022<br>
-                                                                                4- Approach Multiple sport athlete to
-                                                                                promote GHD such as tennis players,
-                                                                                Runners, Rugby and basketball 23rd of
-                                                                                May 2022<br>
-                                                                                5- FIFA WORLD CUP official opening
-                                                                                ceremony and use GHD APP to purchase the
-                                                                                tickets November 21 2022<br>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                <div class="footer">
+                                                    <div class="stats-box">
+                                                        <div class="social-item" id="telegram"
+                                                            style="height: 50px;width: 55px;background-size: cover;background-image: url('./img/dollar2.png');"></div>
+                                                        <div class="stas-col">
+                                                            <p>0</p>
+                                                            <p>Market Cap</p>
                                                         </div>
-                                                        <img src="img/road_map.png" data-jarallax-element="-40" alt=""
-                                                            class="map__title-bg" />
                                                     </div>
-                                                </section>
+                                                    <div class="stats-box">
+                                                        <div class="social-item" id="telegram"
+                                                            style="height: 50px;width: 55px;background-size: cover;background-image: url('./img/members.png');"></div>
+                                                        <div class="stas-col">
+                                                            <p>0</p>
+                                                            <p>Holders</p>
+                                                        </div>
+                                                    </div>
 
+                                                </div>
 
+                                                <div class="footer">
+                                                    <div class="stats-box">
+                                                        <div class="social-item" id="telegram"
+                                                            style="height: 55px;width: 55px"></div>
+                                                        <div class="stas-col">
+                                                            <p>0</p>
+                                                            <p>Telegram members</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="stats-box">
+                                                         <div class="social-item" id="telegram"
+                                                            style="height: 50px;width: 55px;background-size: cover;background-image: url('./img/tim3.png');"></div>
+                                                        <div class="stas-col">
+                                                            <p>0 days</p>
+                                                            <p>Time Launched </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                             </div>
+
                                             <div class="social-container">
                                                 <a href="https://www.instagram.com/ghd_token/">
                                                     <div class="social-item" id="instagram"></div>
@@ -759,10 +649,10 @@
         <div><img src="https://mc.yandex.ru/watch/45940872" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
 
-
+    <!-- /Yandex.Metrika counter -->
 
 </body>
 
-
+<!-- Mirrored from khabib.com/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jun 2021 11:40:34 GMT -->
 
 </html>
