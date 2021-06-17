@@ -2018,7 +2018,7 @@ transition: all 0.25s ease-in-out;
 #index-page { width: 100vw; height: 100vh; overflow: hidden; opacity: 0; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; }
 #index-page.loaded { opacity: 1; }
 #index-page .page-container { transform: translateY(0); }
-body#index-page.animated-page-change .page-container { transform: translateY(-100vh); transition: 0.7s 0s ease-in-out; }
+body#index-page.animated-page-change .page-container { transform: translateY(-100vh); transition: 0.1s 0s ease-in-out; }
 .mainpage{
   overflow-y: scroll;
 }

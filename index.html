@@ -19,12 +19,14 @@
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
 	<title>GHD Token - Purchase Sporting event ticket using Cryptocurrency</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 	</style>
 	<link href="./css/kernel_main0a59.css" type="text/css" rel="stylesheet">
 	<link href="./css/template_7c55e87f50bf28d787cf91ab0e3ca8543361.css" type="text/css" data-template-style="true"
 		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 	<script
 		type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i]; return true; };</script>
 	<script
@@ -84,6 +86,7 @@
 				percent = value.getAttribute('data-progress');
 				value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - val) / 100) * max);
 				value.querySelector('.value').innerHTML = days + `${att}`;
+				value.querySelector('.value').style="font-family:Revalia"
 			});
 		}
 
@@ -97,7 +100,8 @@
 		type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js', './bitrix/js/main/core/core_ajax.js', './bitrix/js/main/core/core_popup.js', './bitrix/js/main/core/core_date.js', './bitrix/js/main/json/json2.min.js', './bitrix/js/main/core/core_ls.js', './bitrix/js/main/core/core_fx.js', './bitrix/js/main/session.js', '../local/templates/dweb/js/jquery-1.12.4.min.js', '../local/templates/dweb/js/slider/slick.js', '../local/templates/dweb/js/fancybox/jquery.fancybox.js', '../local/templates/dweb/js/scrollbar/scrollbar.min.js', '/local/templates/dweb/js/script.js']);</script>
 	<script
 		type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css', './bitrix/js/main/core/css/core_popup.css', './bitrix/js/main/core/css/core_date.css', '../local/templates/dweb/fonts/brutaltype.css', '../local/templates/dweb/fonts/roboto.css', '../local/templates/dweb/js/slider/slick.css', '../local/templates/dweb/js/fancybox/jquery.fancybox.min.css', '../local/templates/dweb/js/scrollbar/scrollbar.css', '../local/templates/dweb/css/keyframes.css', '/local/templates/dweb/template_styles.css']);</script>
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
 
 	<script type="text/javascript"
 		src="./bitrix/cache/js/s2/dweb/template_7ef16f6daeec480e0f6e1daae017d0b3/template_7ef16f6daeec480e0f6e1daae017d0b31414.js?1557128267370834"></script>
@@ -105,7 +109,10 @@
 		type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "f536a60b4ba6940a12bc4b5e5d4aa72d"]); _ba.push(["host", "khabib.com"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
 	<style>
 		.menu-btn {
-			display: none
+			display: block
+		}
+		.menu{
+			height:80vh;
 		}
 
 		.social-container {
@@ -171,6 +178,12 @@
 		}
 
 		@media only screen and (max-width: 600px) {
+			#header-row{
+				justify-content:space-between
+			}
+			.menu{
+				height:80vh
+			}
 			.social-container {
 				position: relative;
 				margin-top: 40px;
@@ -267,16 +280,16 @@
 			<video loop="loop" autoplay="autoplay" playsinline muted>
 
 
-				<source src="https://ghdtoken.net/background.mp4" type='video/mp4'>
+				<source src="./video/bgvideo.mp4" type='video/mp4'>
 				Sorry, the video tag is not supported by your browser.
 			</video>
 		</div>
 		<header
-			style="position: relative;background-color: transparent !important;height: 15vh;width:100vw;padding:0px !important">
+			style="position: relative;background-color: transparent !important;height: 15vh;width:100vw;padding:0px !important;display:flex;align-items:center">
 			<div class="page-width" style="padding-bottom: 13px;">
 				<div class="table">
-					<div class="tc">
-						<div style="display:flex;flex-direction:row;align-items: center;">
+					<div class="tc" style="width:20%">
+						<div style="display:flex;flex-direction:row;align-items: center;" id="header-row">
 							<div class="menu-btn"><span></span>
 								<div class="menu-btn-text">close the menu</div>
 							</div>
@@ -323,7 +336,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="menu" style="height:90vh;overflow-y: scroll;">
+		<div class="menu" style="overflow-y: scroll;">
 
 			<div class="page-width">
 				<div class="elems-list">
@@ -333,7 +346,7 @@
 
 
 								<div class="bg"
-									style="background: url('../local/templates/dweb/images/menu-img.jpg') center center / cover no-repeat">
+									style="background: url('./img/asset21.jpeg') center center / cover no-repeat">
 								</div>
 								<div class="smooth-border active-smooth"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -345,7 +358,7 @@
 						<div class="container">
 							<a class="elem page-change" href="./token.html">
 								<div class="bg"
-									style="background: url('./img/asset4.jpg') center -33px  / cover no-repeat">
+									style="background: url('./img/asset5.jpeg') center -33px  / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -357,7 +370,7 @@
 						<div class="container">
 							<a class="elem page-change" href="https://exchange.pancakeswap.finance/">
 								<div class="bg"
-									style="background: url('./img/ghd.jpeg') center -20px / cover no-repeat">
+									style="background: url('./img/asset10.jpeg') center -33px  / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -370,7 +383,7 @@
 
 							<a class="elem page-change" href="./whitepaper.pdf" download>
 								<div class="bg"
-									style="background: url('./img/whitepaper.jpeg') center center / cover no-repeat">
+									style="background: url('./img/asset12.jpeg') center center / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -382,7 +395,7 @@
 						<div class="container">
 							<a class="elem page-change" href="road.html">
 								<div class="bg"
-									style="background: url('./img/asset2.jpg') center -58px / cover no-repeat">
+									style="background: url('./img/asset13.jpeg') center -58px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -394,7 +407,7 @@
 						<div class="container">
 							<a class="elem page-change" href="https://digitalkhabib.com/">
 								<div class="bg"
-									style="background: url('../local/templates/dweb/images/menu-img6.jpg') center center / cover no-repeat">
+									style="background: url('./img/asset20.jpeg') center -100px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -406,7 +419,7 @@
 						<div class="container">
 							<a class="elem page-change" href="#">
 								<div class="bg"
-									style="background: url('./img/asset3.jpg') center 4px / cover no-repeat">
+									style="background: url('./img/asset14.jpeg') center 4px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -418,7 +431,7 @@
 						<div class="container">
 							<a class="elem page-change" href="about.html">
 								<div class="bg"
-									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.46.59.jpeg') center 4px / cover no-repeat">
+									style="background: url('./img/asset15.jpeg') center 4px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -430,7 +443,7 @@
 						<div class="container">
 							<a class="elem page-change" href="#">
 								<div class="bg"
-									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.47.45.jpeg') center -36px / cover no-repeat">
+									style="background: url('./img/asset17.jpeg') center 4px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -442,7 +455,7 @@
 						<div class="container">
 							<a class="elem page-change" href="#">
 								<div class="bg"
-									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.48.41.jpeg') center -80px / cover no-repeat">
+									style="background: url('./img/asset18.jpeg') center 4px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -454,7 +467,7 @@
 						<div class="container">
 							<a class="elem page-change" href="stats.html">
 								<div class="bg"
-									style="background: url('./img/WhatsApp\ Image\ 2021-06-13\ at\ 23.52.26.jpeg') center -30px / cover no-repeat">
+									style="background: url('./img/asset19.jpeg') center 4px / cover no-repeat">
 								</div>
 								<div class="smooth-border"><i class="smooth-border-tr"></i><i
 										class="smooth-border-bl"></i></div>
@@ -470,7 +483,7 @@
 
 
 				<div class="main-slider" style="margin-top:0px !important">
-					<div class="slide biography-slide" style="padding-top:0px !important">
+					<div class="slide biography-slide" style="padding-top:0px !important;padding-left:0px">
 
 						<div class="page-width">
 							<div class="table">
@@ -484,9 +497,9 @@
 													<span class="first-span"></span>
 												</div>
 
-												<div class="slide-text" id="textcontent" style="font-size:large">
-													<p style="font-size:xx-large;font-weight:bold;color:white">GHD</p>
-													token bridges the world of
+												<div class="slide-text" id="textcontent" style="font-size:large;font-family:Cuprum, sans-serif; text-transform: uppercase;">
+													<p style="font-size:xx-large;font-weight:bold;color:white;font-family: Orbitron, sans-serif;">GHD APP & TOKEN</p>
+													GHD app and token bridges the world of
 													major sporting league events to the groundbreaking technology of
 													cryptocurrency. Joint
 													hands with the Legends of the sporting and entertainment industry,
